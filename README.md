@@ -8,3 +8,17 @@ It should be able to log to a Dear IMGUI debug console
 It should also log its output to a file.
 
 For the submission, make a branch of this repo and submit a new GitHub URL
+
+## Additions - Peter Dobbins
+
+**NOTE:** I developed this on Linux (NixOS).
+
+To build the project, run:
+
+```
+cmake -B build
+
+cmake --build build
+```
+
+- I added a `flake.nix` which contains the development environment for this project for NixOS. Mainly, this environment contains `mesa` (OpenGL libraries), `glfw` (GLFW libraries), clang compiler, and CMake.

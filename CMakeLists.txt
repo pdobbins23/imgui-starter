@@ -48,6 +48,8 @@ else() # Linux
 endif()
 
 add_executable(demo Application.cpp
+                          Logger.cpp
+                          ImGuiLogger.cpp
                           imgui/imgui_demo.cpp
                           imgui/imgui_draw.cpp
                           imgui/imgui_tables.cpp
@@ -60,7 +62,7 @@ add_executable(demo Application.cpp
                 )
 
 if(MACOS OR LINUX)
-    target_link_libraries(demo ${OPENGL_gl_LIBRARY} glfw)
+    target_link_libraries(demo ${OPENGL_gl_LIBRARY} GL glfw)
 elseif(WINDOWS)
     # Windows: Link DirectX11 and required Windows libraries
     target_link_libraries(demo 

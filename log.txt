@@ -1,0 +1,8 @@
+[INFO] Game started successfully
+[INFO] This is a test info message
+[WARN] This is a test warning message
+[ERROR] This is a test error message
+[WARN] This is a test warning message
+[INFO] This is a test info message
+[ERROR] This is a test error message
+[ERROR] This is a test error message
