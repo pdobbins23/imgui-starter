@@ -3,7 +3,6 @@
 #include "Logger.h"
 #include "imgui/imgui.h"
 #include <fstream>
-#include <iostream>
 
 namespace ClassGame {
 //
@@ -23,7 +22,6 @@ void GameStartUp() {
 
   logger.addSink("stdout", Logger::sinkStdout());
   logger.addSink("imgui", imguiLogger.sinkFn());
-
   logger.addSink("file", Logger::sinkFile(logFile));
 
   logger.log(LogLevel::Info, "Game started successfully");
